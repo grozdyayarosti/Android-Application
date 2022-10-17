@@ -1,11 +1,17 @@
 package ru.permexample.objectsobmap
 
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.ImageView
+
+
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
+import com.google.android.material.textfield.TextInputLayout
+
 
 class CActivityMain : AppCompatActivity()
 {
@@ -14,17 +20,21 @@ class CActivityMain : AppCompatActivity()
     override fun onCreate(savedInstanceState: Bundle?)
     {
         super.onCreate(savedInstanceState)
-
         setContentView(R.layout.activity_cmain)
 
-        val button : Button = findViewById(R.id.button1)
-        val editTextInput : EditText = findViewById(R.id.editTextInput)
-        val textView2 : TextView = findViewById(R.id.textView2)
-        button.setOnClickListener{
-            obj.comments.add(editTextInput.text.toString())
+        val button1 : Button = findViewById(R.id.button1)
+        val button2 : Button = findViewById(R.id.button2)
+        val button3 : Button = findViewById(R.id.button3)
+        val button4 : Button = findViewById(R.id.button4)
+        val button5 : Button = findViewById(R.id.button5)
 
-//            Toast.makeText(applicationContext, "Result: ${obj.comments.size}!", Toast.LENGTH_SHORT).show()
-            textView2.text = "" + obj.comments.size
+        val editTextInput1 : TextInputLayout = findViewById(R.id.filledTextField1)
+        val editTextInput2 : TextInputLayout = findViewById(R.id.filledTextField2)
+        val textViewOutput : TextView = findViewById(R.id.textView)
+        button1.setOnClickListener{
+            var v1 = editTextInput1.textAlignment.toString().toDouble()
+            var v2 = editTextInput2.textAlignment.toString().toDouble()
+            textViewOutput.text="$v2"
         }
     }
 }
