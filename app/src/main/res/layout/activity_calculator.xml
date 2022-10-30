@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,21 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@mipmap/calc_background"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".CActivityMain">
+        tools:context=".activities.CActivityCalculator">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:text="simple calculator"
+            android:text="@string/simple_calculator"
             android:layout_weight="1"
-            android:textSize="42dp"
+            android:textSize="42sp"
             android:textColor="@color/main2"
             />
 
@@ -32,12 +32,13 @@
             style="@style/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Number 1"
+            android:hint="@string/number_1"
             >
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -54,10 +55,10 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
+                android:text="@string/plus"
+                android:textSize="40sp"
                 android:backgroundTint="@color/main"
-                android:text="+"
-                android:textSize="40dp"
-                 />
+                />
 
             <Button
                 android:id="@+id/button2"
@@ -66,9 +67,8 @@
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/main"
-                android:contentDescription="1"
-                android:text="-"
-                android:textSize="40dp" />
+                android:text="@string/minus"
+                android:textSize="40sp" />
 
             <Button
                 android:id="@+id/button3"
@@ -77,8 +77,8 @@
                 android:layout_marginRight="15dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/main"
-                android:text="*"
-                android:textSize="40dp"
+                android:text="@string/multiplication"
+                android:textSize="40sp"
                 />
 
             <Button
@@ -87,8 +87,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:backgroundTint="@color/main"
-                android:text="/"
-                android:textSize="40dp"/>
+                android:text="@string/division"
+                android:textSize="40sp"/>
 
 <!--            <ImageButton-->
 <!--                android:id="@+id/buttonPlus"-->
@@ -138,33 +138,23 @@
             android:id="@+id/filledTextField2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Number 2"
+            android:hint="@string/number_2"
             style="@style/button">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
                 />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/MarginSize"
-            android:layout_marginTop="@dimen/MarginSize"
-            android:layout_marginBottom="@dimen/MarginSize"
-            android:backgroundTint="@color/main"
-            android:textSize="30dp"
-            android:text="=" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="@dimen/RowHeight"
-            android:text="TextView"
+            android:text="@string/textview"
             android:textColor="@color/white"
-            android:textSize="50dp"
+            android:textSize="30sp"
             android:visibility="visible" />
 
         <Space

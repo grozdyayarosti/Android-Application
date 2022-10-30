@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">ObjectsObMap</string>
+    <string name="simple_calculator">simple calculator</string>
+    <string name="number_1">Number 1</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="multiplication" translatable="false">*</string>
+    <string name="division" translatable="false">/</string>
+    <string name="number_2">Number 2</string>
+    <string name="textview">TextView</string>
+    <string name="Output">Your output: %1$f</string>
+    <string name="Close">Close</string>
 </resources>

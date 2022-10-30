@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Объект на карте</string>
+    <string name="simple_calculator">простой калькулятор</string>
+    <string name="textview">Просмотр текста</string>
+    <string name="number_2">Число №2</string>
+    <string name="number_1">Число №2</string>
+    <string name="Output">Ваш ответ: %1$f</string>
+    <string name="Close">Закрыть</string>
+</resources>
