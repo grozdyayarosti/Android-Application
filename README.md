@@ -6,3 +6,4 @@ You can view, edit, delete and add list items.
 
 >The folder contains unused scripts. They were used in the application in early versions, 
 >but they can also be viewed (Calculator and login)
+>Main scripts are in app/src/main/java/ru/permexample/objectsobmap/
