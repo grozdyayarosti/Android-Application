@@ -7,4 +7,9 @@
     <string name="number_1">Число №2</string>
     <string name="Output">Ваш ответ: %1$f</string>
     <string name="Close">Закрыть</string>
+    <string name="Input1">Ввод</string>
+    <string name="AddObject">Добавить объект</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="button">Кнопка</string>
 </resources>

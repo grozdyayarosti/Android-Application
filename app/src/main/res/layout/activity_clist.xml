@@ -13,4 +13,16 @@
         android:background="@mipmap/calc_background"
         android:paddingStart="5dp"
         android:paddingEnd="5dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/AddObject"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_plus_white_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

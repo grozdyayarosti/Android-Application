@@ -1,13 +1,12 @@
 package ru.permexample.objectsobmap.model
 
 class CObject(
-    var name : String,
-    var description : String,
-    var price : String
+    var name            : String,
+    var period          : String,
+    var price           : String
 )
 {
-//    var comments : MutableList<String> = mutableListOf()
     override fun toString(): String {
-        return "name $name, description: $description, price $price"
+        return "name $name, period: $period, price $price"
     }
 }

@@ -57,8 +57,7 @@
                 android:layout_weight="1"
                 android:text="@string/plus"
                 android:textSize="40sp"
-                android:backgroundTint="@color/main"
-                />
+                android:backgroundTint="@color/main"/>
 
             <Button
                 android:id="@+id/button2"
@@ -89,49 +88,6 @@
                 android:backgroundTint="@color/main"
                 android:text="@string/division"
                 android:textSize="40sp"/>
-
-<!--            <ImageButton-->
-<!--                android:id="@+id/buttonPlus"-->
-<!--                style="@style/button"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/custom_button"-->
-<!--                -->
-<!--                android:onClick="onButtonPlusClick"-->
-<!--                tools:ignore="TouchTargetSizeCheck" />-->
-<!--            <ImageButton-->
-<!--                android:id="@+id/buttonMinus"-->
-<!--                style="@style/button"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/custom_button"-->
-<!--                android:contentDescription="no"-->
-<!--                app:srcCompat="@drawable/ic_division_white_24"-->
-<!--                tools:ignore="TouchTargetSizeCheck" />-->
-
-<!--            <ImageButton-->
-<!--                android:id="@+id/buttonMultiplication"-->
-<!--                style="@style/button"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/custom_button"-->
-<!--                android:contentDescription="no"-->
-<!--                app:srcCompat="@drawable/ic_division_white_24"-->
-<!--                tools:ignore="TouchTargetSizeCheck" />-->
-<!--            <ImageButton-->
-<!--                android:id="@+id/buttonDivision"-->
-<!--                style="@style/button"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/custom_button"-->
-<!--                android:contentDescription="no"-->
-<!--                app:srcCompat="@drawable/ic_division_white_24"-->
-<!--                tools:ignore="TouchTargetSizeCheck" />-->
-
         </LinearLayout>
 
         <com.google.android.material.textfield.TextInputLayout

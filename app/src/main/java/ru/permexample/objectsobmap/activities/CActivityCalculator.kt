@@ -1,14 +1,13 @@
 package ru.permexample.objectsobmap.activities
 
 
-import android.Manifest
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import ru.permexample.objectsobmap.R
 import ru.permexample.objectsobmap.databinding.ActivityCalculatorBinding
@@ -69,6 +68,19 @@ class CActivityCalculator : AppCompatActivity()
             val v2 = binding.filledTextField2.editText?.text.toString().toDouble()
             binding.textView.text=String.format(getString(R.string.Output), v1/v2)
         }
+        onBackPressedDispatcher.addCallback(
+            this /* lifecycle owner */,
+            object : OnBackPressedCallback(true)
+            {
+                override fun handleOnBackPressed() {
+                    // Back is pressed... Finishing the activity
+                    val myIntent = Intent()
+                    myIntent.putExtra("MY_KEY_4", "Это строка, которая возвращается при нажатии кнопки назад")
+                    setResult(RESULT_OK, myIntent)
+                    finish()
+                }
+            }
+        )
     }
     private fun plus()
     {

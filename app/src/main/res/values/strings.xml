@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ObjectsObMap</string>
+    <string name="app_name">IT courses</string>
     <string name="simple_calculator">simple calculator</string>
     <string name="number_1">Number 1</string>
     <string name="plus" translatable="false">+</string>
@@ -10,4 +10,10 @@
     <string name="textview">TextView</string>
     <string name="Output">Your output: %1$f</string>
     <string name="Close">Close</string>
+    <string name="Input1">Input</string>
+    <string name="AddObject">Add object</string>
+    <string name="KEY_USER_NAME" translatable="false">KEY_USER_NAME</string>
+    <string name="login">login</string>
+    <string name="password">password</string>
+    <string name="button">button</string>
 </resources>
