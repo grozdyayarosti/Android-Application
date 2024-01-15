@@ -1,4 +1,4 @@
-Android-Application "IT-corses"
+Android-Application "IT-courses"
 ===
 This is an application for viewing and editing IT courses or any other list. 
 You can view, edit, delete and add list items.
